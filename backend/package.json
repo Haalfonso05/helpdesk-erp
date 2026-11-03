@@ -1,0 +1,26 @@
+{
+  "name": "helpdesk-erp-backend",
+  "version": "1.0.0",
+  "description": "API REST del Sistema Inteligente de Soporte y Éxito del Cliente (Helpdesk ERP/POS) con MongoDB",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:setup": "node src/db/setup.js",
+    "seed": "node src/db/seed.js",
+    "seed:demo": "node src/db/seed.js --demo",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "seed:reset": "node src/db/seed.js --demo --reset"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.9.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
